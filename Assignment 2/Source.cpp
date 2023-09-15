@@ -24,7 +24,8 @@ int main()
 	STUDENT_DATA names[STUDENT_NUMBER];
 	myfile.open("StudentData.txt");
 
-
+	vector<string> FirstData;
+	vector<string> LastData;
 
 	if (myfile.is_open())
 	{
@@ -37,17 +38,22 @@ int main()
 		}
 		myfile.close();
 
-		vector<string> FirstData;
-		vector<string> LastData;
-
 		for (int i = 0; i < STUDENT_NUMBER; i++)
 		{
 			FirstData.push_back(names[i].firstName);
 			LastData.push_back(names[i].lastName);
 		}
 		
+
 	}
 	else cout << "Can't read file";
 
+
+
+
+	for (int i = 0; i < STUDENT_NUMBER; i++)
+	{
+		cout << "Student #" << i+1 << ":" << FirstData[i] << " " << LastData[i] << endl;
+	}
 	return 0;
 }
