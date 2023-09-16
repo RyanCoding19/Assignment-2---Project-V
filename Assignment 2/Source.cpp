@@ -7,6 +7,7 @@
 using namespace std;
 
 
+
 struct STUDENT_DATA
 {
 	string firstName;
@@ -26,6 +27,7 @@ int main()
 
 	vector<string> FirstData;
 	vector<string> LastData;
+	vector<string> email;
 
 	if (myfile.is_open())
 	{
