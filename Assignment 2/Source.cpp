@@ -59,7 +59,6 @@ int main()
 
 	for (int i = 0; i < STUDENT_NUMBER; i++)
 	{
-		cout << "Student #" << i+1 << endl;
 		cout << "First Name:" << FirstData[i] << endl;
 		cout << "Last Name: " << LastData[i] << endl;
 	}
@@ -97,7 +96,6 @@ int main()
 
 	for (int i = 0; i < STUDENT_NUMBER; i++)
 	{
-		cout << "Student #" << i + 1 << endl;
 		cout << "First Name:" << FirstData[i] << endl;
 		cout << "Last Name: " << LastData[i] << endl;
 		cout << "email: " << email[i] << endl;
